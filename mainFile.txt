@@ -1,0 +1,25 @@
+  " GETTING STARTED IN GIT AND GITHUB BY  ENTITY TEAM " 
+ STEP BY STEP COMMAND LINE FOR GIT, GITHUB AND LITTLE MORE
+--basic setup (git)-- 
+	$ git config --global user.name "your name"                     
+	$ git config --global user.email "your_email@entity.com"
+
+--create new project git-- 
+	$ cd 'my folder name' # go in your root project folder or create one with  $ mkdir folder
+	$ git init # set folder to git control
+	$ git add file_name # add files to git control 
+        	or 
+	$ git add *.c # add all file to git control	
+	next step   
+	$ git commit -m "my first commit" # set 
+
+-- clone repo -- 
+	$ git clone https://github.com/startup-entity-development/server-side.git
+
+-- check the repo status -- 
+	$ git status
+	
+-- show changes between commit,  working tree and etc--
+	$ git diff 
+-- create a new branch-- 
+	$ git checkout -b amend-my-name
