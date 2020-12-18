@@ -1,11 +1,11 @@
   " GETTING STARTED IN GIT AND GITHUB BY  ENTITY TEAM " 
  STEP BY STEP COMMAND LINE FOR GIT, GITHUB AND LITTLE MORE
---basic setup (git)-- 
+-- basic setup (git) -- 
 	$ git config --global user.name "your name"                     
 	$ git config --global user.email "your_email@entity.com"
 	$ git config --global color.ui true
 
---create new project git-- 
+-- create new project git -- 
 	$ cd 'my folder name' # go in your root project folder or create one with  $ mkdir folder
 	$ git init # set folder to git control
 	$ git add file_name # add files to git control 
@@ -43,10 +43,10 @@
 	$ git remote -v
 	$ git remote show origin
 	$ git remote prune origin
--- show changes between commit,  working tree and etc--
+-- show changes between commit,  working tree and etc --
 	$ git diff 
 	$ git diff --staged
--- create a new branch--
+-- create a new branch --
 	$ git branch nameBranch
 -- display a list with the branches --
 	$ git branch
@@ -64,3 +64,46 @@
 	$ git remote add upstream https://github.com/startup-entity-development/server-side.git
 	$ git fetch upstream
 	$ git merge upstream/master9
+
+
+-- GIT REBASE --
+-- The rebase is used when working with branches this makes the branches catch up with the master without affecting it --
+
+-- join the current branch with the master (this cannot be seen as a merge) --
+	$ git rebase
+
+-- when a conflict occurs, there are the following options: --
+-- when we resolve conflicts --continue continues the sequence of the rebase where it was paused --
+	$ git rebase --continue
+
+-- skip the conflict and continue --
+	$ git rebase --skip
+
+-- Returns to the beginning of the rebase --
+	$ git rebase --abort
+
+-- to rebase a specific branch --
+	$ git rebase <nameBranch>
+
+
+-- OTHER COMMANDS --
+-- removes a file from HEAD and puts it in the status of not worked --
+	$ git checkout -- <file>
+
+-- create a branch based on an online one --
+	$ git checkout -b newlocalbranchname origin/branch-name
+
+-- check for changes and update the repository --
+	$ git pull origin <nameBranch>
+
+-- switch branch --
+	$ git checkout <nameBranch/tagname>
+
+-- join the current branch with the specified one --
+	$ git merge <nameBranch>
+
+-- verify changes in the repository online with the local --
+	$ git fetch
+
+-- delete a file from the repository --
+	$ git rm <file>
