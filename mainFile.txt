@@ -1,4 +1,4 @@
-" GETTING STARTED IN GIT AND GITHUB BY  ENTITY TEAM " 
+  " GETTING STARTED IN GIT AND GITHUB BY  ENTITY TEAM " 
  STEP BY STEP COMMAND LINE FOR GIT, GITHUB AND LITTLE MORE
 --basic setup (git)-- 
 	$ git config --global user.name "your name"                     
