@@ -100,7 +100,6 @@
 
 -- GIT REBASE --
 
-
 -- The rebase is used when working with branches this makes the branches catch up with the master without affecting it --
 
 -- join the current branch with the master (this cannot be seen as a merge) --
@@ -167,14 +166,10 @@
 
 	$ git merge upstream/master
 
-<<<<<<< HEAD
 -- and the end push your local changes to your repository--
 
 	$ git push
 	
-
-=======
->>>>>>> main
 -- SHH KEY AND GITHUB --
 
 	$ ls -al ~/.ssh # to see if existing SSH keys are present
