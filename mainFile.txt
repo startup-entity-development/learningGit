@@ -30,6 +30,7 @@
 	$ git commit -m "my first commit" 
 	$ git commit -a -m "my second commit"
 	$ git commit --amend # Changing the Last Commit
+	$ git commit --amend # if you want to reuse the previous commit message as-is.
 
 
  -- pushing changes --  
@@ -41,6 +42,10 @@
 	$ git clone https://github.com/startup-entity-development/server-side.git
 	$ git clone https://github.com/startup-entity-development/server-side.git git-demo
 
+-- discarding the Last Commit--
+
+	$ git reset HEAD~
+	
 -- check the repo status -- 
 
 	$ git status
@@ -50,7 +55,7 @@
 	$ git log --
 	$ git log --oneline --stat
 	$ git log --oneline --graph
-
+	
 --git remote --
 
 	$ git remote add origin https://github.com/startup-entity-development/server-side.git
@@ -73,7 +78,6 @@
 
 	$ git checkout master
 
-
 -- display a list with the branches --
 
 	$ git branch
@@ -84,6 +88,7 @@
 	$ git branch -D nameBranch 
 
 -- delete the branch without asking --
+	
 	$ git checkout -b amend-my-name
 
 -- git tag -- 
@@ -103,6 +108,7 @@
 -- The rebase is used when working with branches this makes the branches catch up with the master without affecting it --
 
 -- join the current branch with the master (this cannot be seen as a merge) --
+
 	$ git rebase
 
 -- when a conflict occurs, there are the following options: --
@@ -182,7 +188,6 @@
 	
 	$ eval "$(ssh-agent -s)" # start the ssh-agent in the background.
 	$ ssh-add ~/.ssh/id_ed25519 # Add your SSH private key to the ssh-agent. 
-
-     copy the content of id_ed25519.pub that is your ssh-key ;)
+     	copy the content of id_ed25519.pub that is your ssh-key ;)
 
 	
