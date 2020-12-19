@@ -29,7 +29,8 @@
 
 	$ git commit -m "my first commit" 
 	$ git commit -a -m "my second commit"
-	$ git commit --amend -m "my third commit"
+	$ git commit --amend # Changing the Last Commit
+
 
  -- pushing changes --  
 
@@ -96,6 +97,7 @@
 	$ git fetch upstream
 	$ git merge upstream/master9
 
+
 -- GIT REBASE --
 
 
@@ -144,6 +146,32 @@
 -- delete a file from the repository --
 	$ git rm <file>
 
+-- Synchronizing your local changes with the upstream repository -- 
+	
+	$ cd foldername -Change the current working directory to your local project.
+
+-- Change to your desired branch -- 
+
+	$ git checkout branch_name
+	$ git remote -v # check the origin as a remote
+
+-- if the origen is not remote -- 
+
+	$ add git remote add upstream https://github.com/startup-entity-development/learningGit.git 
+
+-- Sync your local repository with the upstream (the original one) --
+
+	$ git fetch upstream
+
+-- Perform merge --
+
+	$ git merge upstream/master
+
+-- and the end push your local changes to your repository--
+
+	$ git push
+	
+
 -- SHH KEY AND GITHUB --
 
 	$ ls -al ~/.ssh # to see if existing SSH keys are present
@@ -157,4 +185,6 @@
 	$ eval "$(ssh-agent -s)" # start the ssh-agent in the background.
 	$ ssh-add ~/.ssh/id_ed25519 # Add your SSH private key to the ssh-agent. 
 
--- copy the content of id_ed25519.pub that is your ssh-key ;)
+     copy the content of id_ed25519.pub that is your ssh-key ;)
+
+	
