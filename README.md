@@ -1,11 +1,5 @@
-# learningGit
-  " GETTING STARTED IN GIT AND GITHUB BY ENTITY TEAM" 
- STEP BY STEP COMMAND LINE FOR GIT, GITHUB AND LITTLE MORE
-GETTING STARTED IN GIT AND GITHUB BY  ENTITY TEAM 
-
- -- STEP BY STEP COMMAND LINE FOR GIT, GITHUB AND LITTLE MORE -- 
-
-
+# Git commands
+  
 -- basic setup (git) -- 
 
 	$ git config --global user.name "your name"                     
